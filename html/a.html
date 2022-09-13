@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a태그 하이퍼링크</title>
+
+</head>
+<body>
+  <h1>하이퍼링크
+  
+    <h2 id="t1">텍스트에 하이퍼링크</h2>
+  
+    <ul>
+    <li><a href="http://www.naver.com">네이버</a></li>
+    <li><a href="http://www.google.com" target="_blank">구글</a></li>
+  </ul>
+  <!-- 
+    href = "url"
+    href ="/경로/파일명,화일명" 프로토콜://도메인 생략 같은 장치에서
+    href ="경로/파일명,화일명"  현재폴더에서
+    href ="../경로/파일명,화일명"  현재 폴더 상위 폴더
+   -->
+   
+   <h2 id="t2">이미지에 하이퍼링크</h2>
+   
+   <!-- p>a>img -->
+   <!-- img에서 src 에서 사진 경로 불러오려면 ctrl+ space -->
+   <p><a href="http://www.naver.com"><img src="../logo.jpg" alt=" 로고"></a></p>
+
+   <h2 id="t3">문서 내 이동</h2>
+   <ol>
+    <li>문서 내 북마크 할 태그요소 id 속성지정</li>
+    <li>a 태크에 href="#id이름"</li>
+    <!-- id 넣는거에는 # 안붙이고 태크 할때는 # 불이기 -->
+   </ol>
+
+   <p>목차</p>
+   <!-- ol>li*3>a -->
+   <ol>
+    <li><a href="#t1">텍스트에 하이퍼링크</a></li>
+    <li><a href="#t2">이미지에 하이퍼링크</a></li>
+    <li><a href="#t3">문서 내 이동</a></li>
+   </ol>
+
+
+  </h1>
+</body>
+</html>
