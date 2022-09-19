@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자 연습</title>
+  <style>
+    /* #아이디 */
+    #section1{background-color:#96f2a7;}
+    #section2{background-color:#f9b766;}
+    #section3{background-color:#5da5f8;}
+
+    /* .클래스 이름 */
+    /* .box 문서 내 모든 클래스box */
+    .box{color:#f00}
+    /* 태그 선택자 */
+    /* type 선택자 */
+    h1{color:#00f;}
+    /* 조상과 후손관계. 공백문자 구분자. 스페이스로 공백 줌 */
+    /* section p{color:#ff0;} */
+     
+    /* 부모>자식 > 구분자 */
+    section>p{color: #ff0;}
+    /* + 인접형제 */
+    h1+p{background-color: #ccc;}
+    /* ~동생 */
+    h1 ~ p {background-color: #352;}
+
+    </style>
+</head>
+<body>
+  <!-- div#wrap
+  태그#아이디명
+  #아이디명 -->
+  <div id="wrap">
+    <header>헤더</header>
+    <!-- .container -->
+    <div class="container">
+      <!-- 
+        section#section$*3
+        섹션 3개 만들어주고 아이디 섹션이 오는데 $ 는 넘버링 넣어줌
+       -->
+       
+       <section id="section1"> 
+        <p>내용</p>
+        <div class="box">
+        <h1>섹션제목</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus odit nulla rerum voluptas qui esse aliquam nam, sapiente officia aut quas ipsam earum distinctio quos ad sunt? Voluptatibus, impedit?</p>
+        <p>동생</p></section>
+      
+       <section id="section2">
+        <!-- p+.box -->
+        <p>내용</p>
+        <div class="box">
+          <!-- h1+p+p -->
+          <!-- h1+p*2 -->
+          <h1>섹션제목</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus odit nulla rerum voluptas qui esse aliquam nam, sapiente officia aut quas ipsam earum distinctio quos ad sunt? Voluptatibus, impedit?</p>
+          <p>동생</p>
+        </div>
+       </section>
+       <section id="section3">
+        <p>내용</p>
+        <div class="box">
+          <p>형님</p>
+        <h1>섹션제목</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus odit nulla rerum voluptas qui esse aliquam nam, sapiente officia aut quas ipsam earum distinctio quos ad sunt? Voluptatibus, impedit?</p>
+        <p>동생</p>
+       </section>
+
+
+    </div>
+    <footer>푸터</footer>
+
+
+    <!-- //#wrap -->
+  </div>
+</body>
+</html>
