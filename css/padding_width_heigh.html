@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>padding_width_height</title>
+  <style>
+    *{margin:0; padding:0;}
+    .wrap{
+      width:1190px;
+      /* 블록레벨 가운데 정렬 */
+      /* 부모에게 너비 지정 */
+      /* margin:0 auto; */
+      /* 2값 상하 좌우 */
+      /* margin:0 상하를 0으로 하는거
+       auto; 는 좌우를 auto */
+      margin:0 auto;
+    }
+    section {
+      /* padding:50px 100px */
+      /* 한개의 값 상우하좌 동일 */
+      padding:2rem; /*body에 지정된 글자 크기의 2배*/
+      border:10px dashed #000;
+      border-left:0;
+      border-right:0;
+      /* margin:2rem 0; */
+    }
+    .section1{background-color: rgb(249, 211, 154);}
+    .section2{background-color: rgb(170, 154, 249);}
+    .section3{background-color: rgba(165, 249, 154, 0.823);}
+  </style>
+</head>
+<body><div class="wrap">
+  
+    <div class="slide">
+      슬라이드
+    </div>
+    <!-- section.section$*3>h1>{section$}^p>lorem -->
+    <section class="section1">
+      <h1>section1</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate beatae corrupti id! Asperiores illum officiis totam nobis fugiat, vero iure non atque dolor, illo voluptatum, in rem recusandae optio natus!</p>
+    </section>
+    <section class="section2">
+      <h1>section2</h1>
+      <p>Laborum ducimus molestiae, laboriosam assumenda omnis ipsam sint architecto, at quidem officiis fugiat aliquid provident incidunt dicta tempore natus ea atque sapiente excepturi itaque eaque quas. Quisquam quae voluptatem eligendi.</p>
+    </section>
+    <section class="section3">
+      <h1>section3</h1>
+      <p>Cupiditate voluptatem exercitationem ab, repellendus suscipit fugiat deleniti adipisci repudiandae hic, corporis aut at ut tempora! Assumenda exercitationem et reprehenderit voluptatum magni vero natus eius dolores, repellat dicta, enim maiores.</p>
+    </section>
+    <!-- div.notice -->
+    <div class="notice">
+      공지사항
+    </div>
+</div>
+</body>
+</html>
