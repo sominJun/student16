@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>너비와높이계산</title>
+  <style>
+    *{margin:0;padding:0;}
+    .container{
+      width:800px;
+      margin: 30px auto; /*블록레벨의 가운데 정렬*/
+      padding: 50px;
+      border: 1px solid #000;
+      background-color: #ccc;
+      /*overflow: hidden;*/
+      /*부모요소에 넘치면 보이지 않게 */
+
+    }
+    .box{background-color: #ef3; 
+      width: 700px; 
+      border: 10px solid #0f0;
+      padding: 50px;
+      margin: 100px;}
+
+    
+    
+
+  </style>
+</head>
+<body>
+  <!-- div.container.ex$*3>div.box>{내용$} -->
+  <div class="container ex1">
+    <div class="box">내용1</div>
+  </div>
+  <div class="container ex2">
+    <div class="box">내용2</div>
+  </div>
+  <div class="container ex3">
+    <div class="box">내용3</div>
+  </div>
+</body>
+</html>
