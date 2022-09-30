@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex layout - header 1row 3단 레이아웃2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        padding: 1rem;
+        /* min-width: 960px; */
+        width: 85%;
+      }
+
+      .parent{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #ccc;
+
+      }
+
+      .parent .child{
+      background-color: #999;
+      
+    }
+
+    .logo{
+      width: 150px;
+      height: 150px;
+    }
+
+    .navigation{
+      margin-left: 20px;
+      width: 200px;
+      line-height: 80px;
+    }
+
+    .search{
+      margin-left: auto;
+      width: 80px;
+      height: 60px;
+    }
+
+    .util-top{
+      width: 80px;
+      height: 60px;
+    }
+
+
+     
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="parent">
+        <div class="logo child">logo</div>
+        <div class="navigation child">nav</div>
+        <div class="search child">search</div>
+      </header>
+    </div>
+  </body>
+</html>
